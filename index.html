@@ -1,1 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Comienzas con tu negocio? Obtén ayuda con diseños publicitarios o páginas web simples y a precio accesible para impulsar tu proyecto.">
+    <meta name="keywords" content="Portafolio, Diseño, Gráfico, Desarrollo, Web, HTML, CSS, JS, JavaScript, Adobe, Photoshop, Illustrator, México, Español">
+    <meta name="author" content="E-nnova Design">
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="stylesheet" href="LIBS/style.css">
+    <link rel="shortcut icon" href="IMG/Favicon.svg" type="image/x-icon">
+    <title>E-nnova Design | Diseño y Desarrollo Web</title>
+</head>
+<body>
+    <nav>
+        <div id="NavInterno">
+            <!-- <a href="#"><img src="IMG/Logo personal.svg" alt="" id="LogoNav"></a> -->
+            <a href="#" id="Nombre"><span id="E">E</span>-nnova Design</a>
+            <ul id="ListaNav">
+                <li><a href="#" class="navlink">Inicio</a></li>
+                <li><a href="#Informacion" class="navlink">Información</a></li>
+                <li><a href="#Servicios" class="navlink">Servicios</a></li>
+                <li><a href="#Portafolio" class="navlink">Portafolio</a></li>
+                <li><a href="#Contacto" class="navlink">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <div id="Background"></div>
+        <div id="Presentacion">
+            <img src="IMG/Logo personal.svg" alt="" id="LogoPresentacion">
+            <p>
+                ¡Hola! Esto es <br>
+                <span id="NombrePresentacion">E-nnova Design</span> <br>
+                Diseño Gráfico y Desarrollo Front-End
+            </p>
+        </div>
+        <p id="CreditoFondo">
+            Foto de <a href="https://unsplash.com/es/@mumolabs?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Rayi Christian Wicaksono</a> en <a href="https://unsplash.com/es/s/fotos/web?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" target="_blank">Unsplash</a>
+        </p>
+    </main>
+    <section id="Informacion">
+        <div class="ContenedorSubtitulo">
+            <div class="Subtitulo">
+                <h2>Información<span>¿Quién soy?</span></h2>
+            </div>
+        </div>
+        <div class="Contenido">
+            <div>
+                <h3>
+                    Soy <i>Eduardo Chan</i>, un apasionado por la creación.
+                </h3>
+                <p>
+                    Soy un estudiante mexicano que acepta proyectos de <b>diseño gráfico</b> y <b>desarrollo Front-End</b> como afición.
+                    Me adentré en el mundo del diseño por mi cuenta y logré desarrollar las habilidades suficientes para entregar trabajos
+                    buenos, bonitos y baratos. Si está comenzando con un proyecto o negocio y desea contar con una imagen de calidad desde sus primeros pasos,
+                    puedo ayudarle a conseguirlo.
+                    <br>
+                    Además, tal vez le alegre saber que las ganancias de E-nnova Design apoyan mis estudios y mis proyectos.
+                </p>
+            </div>
+            <img src="IMG/Logo personal.svg" alt="" class="Ilustracion">
+        </div>
+    </section>
+    <section id="Servicios">
+        <div class="DetallesVentana Oculto">
+            <div class="ContenedorDeDetalles">
+                <div id="CerrarVentana"><span class="icon icon-x-cerrar"></span></div>
+                <div class="ContenedorSubtitulo">
+                    <div class="Subtitulo">
+                        <h2>Detalles<span id="NombreServ">xd</span></h2>
+                    </div>
+                </div>
+                <div id="CuerpoDetalles">
+                    <div id="ContenidoDetalles">
+                    <p id="DescripcionDetalles"></p>
+                    <br><br><br>
+                    <h3>Notas</h3>
+                    <p id="InfoExtraDetalles"></p>
+                    <h3>Según el pedido, puede incluir</h3>
+                    <p >
+                        <ul id="Incluye">
+                            <li>xd</li>
+                            <li>xd2</li>
+                        </ul>
+                    </p>
+                    <h3>Precio</h3>
+                    <p>Todos los precios son a tratar según el pedido del cliente, contacte para conocer una cotización aproximada.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ContenedorSubtitulo">
+            <div class="Subtitulo">
+                <h2>Servicios<span>Lo que ofrezco</span></h2>
+            </div>
+        </div>
+            <div id="ServDG" class="ContenedorServ">
+                <h3>Diseño Gráfico</h3>
+                <div id="ContenedorServDG">
+                    <div id="ADG" class="item">
+                        <p class="IconoServ" onclick="MostrarDetalles(0)"><span class="icon icon-DisenoPublicitario"></span></p>
+                        Diseño Publicitario
+                        <p>
+                            Flyers, tarjetas de presentación, carteles
+                        </p>
+                    </div>
+                    <div id="BDG" class="item">
+                        <p class="IconoServ" onclick="MostrarDetalles(1)"><span class="icon icon-IdentidadDeMarca"></span></p>
+                        Identidad de Marca
+                        <p>
+                            Logo y manual de identidad
+                        </p>
+                    </div>
+                    <div id="CDG" class="item">
+                        <p class="IconoServ" onclick="MostrarDetalles(2)"><span class="icon icon-RedSocial"></span></p>
+                        Set Redes Sociales
+                        <p>
+                            Imagen de perfil, banners, plantilla de publicaciones o historias
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div id="ServDW" class="ContenedorServ">
+                <h3>Desarrollo Front-End</h3>
+                <div id="ContenedorServDW">
+                    <div id="ADW" class="item">
+                        <p class="IconoServ" onclick="MostrarDetalles(3)"><span class="icon icon-LandingPage"></span></p>
+                        Landing Page
+                        <p>
+                            Una página web simple para atraer a tu público
+                        </p>
+                    </div>
+                    <div id="BDW" class="item">
+                        <p class="IconoServ" onclick="MostrarDetalles(4)"><span class="icon icon-WebApp"></span></p>
+                        Aplicación Web Simple
+                        <p>
+                            Una página web que funcione como desee
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="Portafolio">
+        <div class="ContenedorSubtitulo">
+            <div class="Subtitulo">
+                <h2>Portafolio<span>Conozca mis mejores trabajos</span></h2>
+            </div>
+        </div>
+        <div id="ServDG" class="ContenedorServ">
+            <h3>Diseño Gráfico</h3>
+            <div id="ContenedorPortDG">
+                <div id="ADG" class="item tarjeta">
+                    <div class="ImgTarjetaContenedor"><img src="IMG/PortafolioIMG/CARIM.jpg" alt="" class="ImgTarjeta"></div>
+                    <br>
+                        Panadería CARIM
+                    <p>
+                        (Set Redes Sociales)
+                    </p>
+                    <p>
+                        <a href="https://www.facebook.com/Panaderia-Carim-Dzitbalche-113375943696168/" target="_blank" rel="noopener noreferrer" class="LinkVisitarPort"><span class="icon icon-ExternalLink"></span> Visitar</a>
+                    </p>
+                </div>
+                <div id="BDG" class="item tarjeta">
+                    <div class="ImgTarjetaContenedor"><img src="IMG/PortafolioIMG/Atlantis.jpg" alt="" class="ImgTarjeta"></div>
+                    <br>
+                    Escudería Atlantis Force
+                    <p>
+                        (Diseño Publicitario, Identidad de Marca y Set Redes Sociales)
+                    </p>
+                    <p>
+                        <a href="https://www.instagram.com/atlantis_force/" target="_blank" rel="noopener noreferrer" class="LinkVisitarPort"><span class="icon icon-ExternalLink"></span> Visitar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="ServDW" class="ContenedorServ">
+            <h3>Desarrollo Front-End</h3>
+            <div id="ContenedorPortDW">
+                <div id="ADW" class="item tarjeta">
+                    <div class="ImgTarjetaContenedor"><img src="IMG/PortafolioIMG/Port.png" alt="" class="ImgTarjeta"></div>
+                    <br>
+                    Mi Portafolio
+                    <p>
+                        (Landing Page)
+                    </p>
+                    <p  class="LinkVisitarPort">
+                        <a href="#" rel="noopener noreferrer"><span class="icon icon-ExternalLink"></span> Visitar</a>
+                    </p>
+                </div>
+                <div id="BDW" class="item tarjeta">
+                    <div class="ImgTarjetaContenedor"><img src="IMG/PortafolioIMG/WS.png" alt="" class="ImgTarjeta"></div>
+                    <br>
+                    Wit Set
+                    <p>
+                        (Aplicación Web Simple)
+                    </p>
+                    <p>
+                        <a href="https://edward5126.github.io/WitSet/" target="_blank" rel="noopener noreferrer" class="LinkVisitarPort"><span class="icon icon-ExternalLink"></span> Visitar</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Contacto">
+        <div class="ContenedorSubtitulo">
+            <div class="Subtitulo">
+                <h2>Contacto<span>El primer paso para una gran imagen</span></h2>
+            </div>
+        </div>
+        <div class="ContenedorServ">
+                <h3>
+                    Describa qué es lo que quiere para su proyecto y conozca una cotización aproximada
+                </h3>
+                <div id="ContenedorContacto">
+                    <div id="AC" class="item">
+                        <p class="IconoServ"><a href="https://forms.gle/ZhVexShM5qCfqwo57" target="_blank" rel="noopener noreferrer"><span class="icon icon-Formulario"></span></a></p>
+                        Formulario de Google
+                        <p>
+                            Detalle solo los puntos más importantes
+                        </p>
+                    </div>
+                    <div id="BC" class="item">
+                        <p class="IconoServ"><a href="mailto:Eduardochan_cach@hotmail.com"><span class="icon icon-Mail"></span></a></p>
+                        e-mail
+                        <p>
+                            Ideal para resolver dudas
+                        </p>
+                    </div>
+                    <div id="CC" class="item">
+                        <p class="IconoServ"><a href="https://github.com/Edward5126" target="_blank" rel="noopener noreferrer"><span class="icon icon-GitHub"></span></a></p>
+                        GitHub
+                        <p>
+                            Un vistazo a mis repositorios
+                        </p>
+                    </div>
+                    <div id="DC" class="item">
+                        <p class="IconoServ"><a href="https://www.instagram.com/ennova_design/" target="_blank" rel="noopener noreferrer"><span class="icon icon-instagram"></span></a></p>
+                        Instagram
+                         <p>
+                            Contacto más cotidiano
+                        </p> 
+                    </div>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <p>
+            <a href="https://www.buymeacoffee.com/EnnovaDesign" target="_blank" rel="noopener noreferrer"><span class="icon icon-buymeacoffee"></span><br> Donar en Buy Me A Coffee</a> <br><br> Copyrigth &copy; 2022 - <a href="#">E-nnova Design</a> <br> Todos los derechos reservados
+        </p>
+    </footer>
 
+    <script src="JS/Script.js"></script>
+</body>
+</html>
