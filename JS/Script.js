@@ -3,7 +3,6 @@ window.onload = SeccionActiva;
 
 function SeccionActiva() {
     let y = window.scrollY;
-    console.log(y);
 
     if (y > 200) {
         document.querySelector("nav").classList.add("abajo");
@@ -80,4 +79,25 @@ function MostrarDetalles(No) {
     }
     document.querySelector(".DetallesVentana").classList.remove("Oculto");
     document.querySelector("body").style.overflowY = "hidden";
+}
+
+document.getElementById("AbrirMenu").addEventListener("click", e => {
+    e.preventDefault();
+    document.getElementById("ListaNav").classList.add("Mostrar");
+    document.querySelector("body").style.overflowY = "hidden";
+})
+
+document.getElementById("CerrarMenu").addEventListener("click", e => {
+    e.preventDefault();
+    document.getElementById("ListaNav").classList.remove("Mostrar");
+    document.querySelector("body").style.overflowY = "visible";
+})
+
+document.querySelectorAll(".navlink").forEach(element => {
+    element.addEventListener("click", CerrarMenu);
+});
+
+function CerrarMenu() {
+    document.getElementById("ListaNav").classList.remove("Mostrar");
+    document.querySelector("body").style.overflowY = "visible";
 }
