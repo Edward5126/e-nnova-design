@@ -540,4 +540,21 @@ footer > p > a:hover, #CreditoFondo > a:hover {
     .SubtiMin {
         display: none;
     }
+
+    .Subtitulo {
+        display: none;
+    }
+
+    section {
+        padding: 7%;
+    }
+
+    #CuerpoDetalles {
+        height: 90%;
+    }
+
+    .abajo {
+        background-color: #161616b5;
+        backdrop-filter: none;
+    }
 }
